@@ -1,4 +1,8 @@
-# wf-oopphp
-Course oop php until database connection
+# boardgame
+This Boardgame is made for the Subject PHP at Windesheim Flevoland ADSD Software Development. 
+The Language that I use to make this project:
 
-Change config file and routes to match your server
+- HTML
+- CSS
+- PHP
+- SQL
