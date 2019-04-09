@@ -11,6 +11,8 @@ class Connection
         /**
          * PDO() to your database setup in config file
          */
+
+
         try {
             return new PDO(
                 $config['connection'] . ';dbname=' . $config['name'],

@@ -1,7 +1,8 @@
-<?php
-/**
- * Created by: stephanhoeksema 2018
- * phpoop
- */
+<?php require 'session.php';
+$title = "Battles";
+
+
+$sqlresult =  $app['database']->selectAllAss('games');
+
 
 require 'views/battles.view.php';

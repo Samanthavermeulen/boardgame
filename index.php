@@ -17,6 +17,15 @@ $current = Request::uri();
  * @Request::uri get the uri
  * @Request::method POST or GET?
  */
+
+/**
+ * Router has a static function named load. This load function contains a require statement
+ * which takes parameter named file. The code in that file is copied at the require location
+ * So for example we load the routes.php into ths function Router:load.
+ */
 require Router::load('routes.php') //chaining!!
     ->direct(Request::uri(), Request::method());
+
+
+
 

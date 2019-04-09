@@ -12,7 +12,9 @@ class Router
     {
         $router = new self();
         require $file;
+
         return $router;
+
     }
 
     public function get($uri, $controller)
@@ -35,4 +37,6 @@ class Router
         }
         throw new Exception('Sorry uri not defined!');
     }
+
+
 }

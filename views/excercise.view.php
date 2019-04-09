@@ -1,68 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Meta tags -->
-    <meta charset="UTF-8">
+<?php
+$title = "Exercises";
+require 'partials/head.php'; ?>
 
-    <!-- Title   -->
-    <title>Exercises</title>
-
-    <!-- CSS Bootstrap   -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" href="views/style.css">
-    <!-- Fontawesome / icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-</head>
-<body>
-<?php include "public/nav.php"; ?>
-<div class="container-fluid">
     <div class="row">
         <div class="col-10 offset-1">
-            <div class="bg-primary text-white ">
-                Welkom ADSD 2018!
-            </div>
+        <h4>Exercises</h4>
+        <p>
+            Pressing a link below will start a download. Unzip the downloaded file to a directory. Within the
+            comments is written what to do. If you have questions let me know.
+        </p>
+        <ul>
+            <li>
+                <a href="Excersice/01_php_string_manipulation/index.php.zip" >01 php string manipulation</a>
+            </li>
+            <li>
+                <a href="Excersice/02_php_integer_manipulation/index.php.zip" >02 php integer manipulation</a>
+            </li>
+            <li>
+                <a href="Excersice/03_php_include-html_start/index.php.zip" >03 php include-html start</a>
+            </li>
+            <li>
+                <a href="Excersice/04_php_if-else/index.php.zip" >04 php if-else</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <hr>
+    <div class="row">
+       <div class="col-6 offset-3">
+
+            <form class="form-signin" action="excercise_01" method="post">
+
+                <h4 class="h3 mb-3 font-weight-normal">Solution to exercise 01_php_string_manipulation</h4>
+                <input type = "text" class = "form-control"
+                       name = "programmer" placeholder = "Programmer (f.e. Ada Lovelace)"
+                       required autofocus></br>
+                <input type = "text" class = "form-control"
+                       name = "year" placeholder = "Year (f.e. 1834)" required></br>
+
+                <input type="submit" value="Show answer" class="btn btn-lg btn-primary btn-block" name="submit"/></br>
+
+
+            </form>
         </div> <!-- End div greeting -->
-        <hr>
-        <div class="col-10 offset-1">
-            <h4>Exercises</h4>
-            <p>
-                Wanneer je hieronder op een van de links klikt. Dan wordt er een bestand gedowndload.
-                Pak het bestand uit in een directory en in comments is geschreven wat je moet doen.
-                Mocht je vragen hebben dan hoor ik het graag.
-            </p>
-            <ul>
-                <li>
-                    <a href="Excersice/01_php_string_manipulation/index.php.zip" >01 php string manipulation</a>
-                </li>
-                <li>
-                    <a href="Excersice/02_php_integer_manipulation/index.php.zip" >02 php integer manipulation</a>
-                </li>
-                <li>
-                    <a href="Excersice/03_php_include-html_start/index.php.zip" >03 php include-html start</a>
-                </li>
-                <li>
-                    <a href="Excersice/04_php_if-else/index.php.zip" >04 php if-else</a>
-                </li>
-            </ul>
-        </div><!-- End div - Games -->
-        <hr>
-        <div class="col-10 offset-1">
+    </div>
+    <hr>
+    <div class = "row">
+        <div class="col-6 offset-3">
 
-        </div><!-- End div - class Player-->
-    </div> <!-- End div row -->
+            <form class="form-signin" action="excercise_02" method="post">
 
-    <footer class="align-bottom">
-        <blockquote class=" blockquote blockquote-reverse ">
-            <p class="col-10 offset-1 text-success">
-                Het schrijven van programmeercode is een van de meest creatieve manieren van denken. Iedereen zal het anders doen.
-            </p>
-            <p class="blockquote-footer offset-2">Stephan Hoeksema</p>
-        </blockquote>
-    </footer>
-</div> <!-- End container -->
-<!-- JavaScript / Popper.js / jQuery all for Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-</body>
-</html>
+                <h4 class="h3 mb-3 font-weight-normal">Solution to exercise 02 php integer manipulation</h4>
+                <input type = "text" class = "form-control"
+                       name = "hours" placeholder = "Hours (f.e. 40)"
+                       required autofocus></br>
+                <input type = "text" class = "form-control"
+                       name = "productivity" placeholder = "Productivity (f.e. 10.5)" required></br>
+
+                <input type="submit" value="Show answer" class="btn btn-lg btn-primary btn-block" name="submit"/></br>
+
+
+            </form>
+        </div> <!-- End div greeting -->
+    </div>
+    <hr>
+    <div class = "row">
+        <div class="col-6 offset-3">
+
+            <form class="form-signin" action="excercise_03" method="post">
+
+                <h4 class="h3 mb-3 font-weight-normal">Solution to exercise 03 php include-html start</h4>
+                <input type = "text" class = "form-control"
+                       name = "title" placeholder = "Title (f.e. Top 5 Learning Tips)"
+                       required autofocus></br>
+
+                <input type="submit" value="Show answer" class="btn btn-lg btn-primary btn-block" name="submit"/></br>
+
+
+            </form>
+        </div> <!-- End div greeting -->
+    </div>
+    <hr>
+    <div class = "row">
+        <div class="col-6 offset-3">
+
+            <form class="form-signin" action="excercise_04" method="post">
+
+                <h4 class="h3 mb-3 font-weight-normal">Solution to exercise 04 php if-else</h4>
+                <input type = "text" class = "form-control"
+                       name = "mylines" placeholder = "Lines of code (f.e.  4000000) "
+                       required autofocus></br>
+
+                <input type="submit" value="Show answer" class="btn btn-lg btn-primary btn-block" name="submit"/></br>
+
+
+            </form>
+        </div> <!-- End div greeting -->
+    </div>
+
+<?php require 'partials/foot.php'; ?>

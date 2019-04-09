@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by: stephanhoeksema 2018
- * phpoop
- */
+//name of the title for head.php
+$title = "Players";
+require 'session.php';
+
+$sqlresult =  $app['database']->selectAllAss('player');
 
 require 'views/players.view.php';

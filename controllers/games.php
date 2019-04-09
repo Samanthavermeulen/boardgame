@@ -1,8 +1,6 @@
 <?php
-/**
- * Created by: stephanhoeksema 2018
- * phpoop
- */
+require 'session.php';
+$sqlResult =  $app['database']->selectForList('games', 'name', 'description', 'dor');
 
 
 require 'views/games.view.php';

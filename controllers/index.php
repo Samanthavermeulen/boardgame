@@ -1,9 +1,5 @@
 <?php
-/**
- * get class
- * @Player
- * @Users
- */
+require 'session.php';
 require 'core/Player.php';
 require 'core/Users.php';
 
